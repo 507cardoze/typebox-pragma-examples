@@ -1,0 +1,33 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"compilerOptions": {
+		"types": ["node", "jest"],
+		"skipLibCheck": true,
+		"target": "ES2019",
+		"module": "CommonJS",
+		"noUnusedParameters": true,
+		"resolveJsonModule": true,
+		"forceConsistentCasingInFileNames": true,
+		"lib": ["ES2019", "DOM"],
+		"moduleResolution": "node",
+		"noUnusedLocals": true,
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+		"strict": true,
+		"esModuleInterop": true,
+		"strictNullChecks": true,
+		"outDir": "dist",
+		"baseUrl": ".",
+		"noUncheckedIndexedAccess": true,
+		"declaration": true,
+		"paths": {
+			"@src/*": ["src/*"],
+			"@tests/*": ["tests/*"]
+		}
+	},
+	"include": ["src/**/*.ts", "tests/**/*"],
+	"exclude": ["node_modules", ".vscode/**/*"],
+	"ts-node": {
+		"require": ["tsconfig-paths/register"]
+	}
+}
