@@ -9,9 +9,10 @@ const compileSchema = Type.Object({
 
 type compileSchema = Static<typeof compileSchema>;
 
-export const validateWithError = (value: compileSchema) =>
-	TypeCompiler.Compile(compileSchema).Errors(value).First()?.message;
+const validate = TypeCompiler.Compile(compileSchema);
+
+export const validateWithError = (value: compileSchema) => validate.Errors(value).First()?.message;
 
 export const validateWithAllErrors = (value: compileSchema) => [
-	...TypeCompiler.Compile(compileSchema).Errors(value),
+	...validate.Errors(value),
 ];
