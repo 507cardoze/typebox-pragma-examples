@@ -1,36 +1,36 @@
-# TypeBox
+# TypeBox 📦
 
-### ¿Qué es TypeBox?
+### ¿Qué es TypeBox? 🤔
 
 TypeBox es una biblioteca para JavaScript/TypeScript que actúa como un constructor de esquemas JSON con una característica especial: los esquemas creados pueden ser inferidos a tipos de TypeScript. En esencia, TypeBox es una herramienta que te permite definir una estructura de datos una sola vez, y usar esa definición tanto para la verificación de tipos de TypeScript como para la validación de datos en tiempo de ejecución. Esto simplifica el proceso de trabajar con datos estructurados en aplicaciones TypeScript, especialmente cuando se trata de APIs o manipulación de datos externos.
 
-### ¿Para qué sirve TypeBox?
+### ¿Para qué sirve TypeBox? 🛠️
 
-- Crear esquemas JSON robustos y tipados.
-- Mantener la consistencia entre los tipos de TypeScript y la estructura de datos real.
-- Validar la integridad de los datos en runtime.
+- Crear esquemas JSON robustos y tipados. 📝
+- Mantener la consistencia entre los tipos de TypeScript y la estructura de datos real. 🔄
+- Validar la integridad de los datos en runtime. ✅
 
-### ¿Por qué usar TypeBox?
+### ¿Por qué usar TypeBox? 🌟
 
-- Inferencia de tipos
+- Inferencia de tipos 🧠
   - Genera automáticamente tipos TypeScript precisos a partir de esquemas JSON.
   - Reduce la duplicación de código y minimiza errores al unificar la definición de esquemas y tipos.
 
-- Interoperabilidad Universal 
+- Interoperabilidad Universal 🌍
   - Una de las características más poderosas de TypeBox es su completa compatibilidad con JSON Schema (Draft 7). Esto significa que los esquemas generados por TypeBox pueden exportarse fácilmente como JSON puro. Una vez exportados, estos esquemas son independientes de TypeBox y pueden utilizarse en cualquier contexto que soporte JSON Schema (Draft 7).
     
-- Rendimiento
+- Rendimiento 🚀
   - Compilación ultrarrápida de esquemas, superando significativamente a otras soluciones del mercado.
   - Validación de datos altamente eficiente, comparable o superior a las alternativas más rápidas disponibles.
   - Su compilador JIT (Just-In-Time) genera código de validación optimizado, ideal para aplicaciones que manejan grandes volúmenes de datos o requieren validaciones frecuentes.
 
-### Ejemplos
+### Ejemplos 💡
 
-- Ejemplo 1 - Primitivos: Validación de tipos primitivos
-- Ejemplo 2 - Arreglos y Objetos: Validación de tipos de arreglos, objetos y compuestos
-- Ejemplo 3 - Regex: Validación personalizada con expresiones regulares
-- Ejemplo 4 - Compilación: Compilación de esquemas para un mayor rendimiento
-- Ejemplo 5 - Wrapper: Clase Wrapper con diferentes utilidades
+- Ejemplo 1 - Primitivos: Validación de tipos primitivos 🔢
+- Ejemplo 2 - Arreglos y Objetos: Validación de tipos de arreglos, objetos y compuestos 📊
+- Ejemplo 3 - Regex: Validación personalizada con expresiones regulares 🔍
+- Ejemplo 4 - Compilación: Compilación de esquemas para un mayor rendimiento ⚡
+- Ejemplo 5 - Wrapper: Clase Wrapper con diferentes utilidades 🎁
 
 ```typescript
 ┌────────────────────────────┬────────────┬──────────────┬──────────────┬──────────────┬──────────────┐
