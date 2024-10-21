@@ -2,30 +2,36 @@
 
 ### ¿Qué es TypeBox?
 
-TypeBox es una biblioteca para JavasScript/TypeScript que actúa como un constructor de esquemas JSON con una característica especial: los esquemas creados pueden ser inferidos a types de typescript, En esencia, TypeBox es una herramienta que te permite definir una estructura de datos una sola vez, y usar esa definición tanto para la verificación de tipos de TypeScript como para la validación de datos en tiempo de ejecución. Esto simplifica el proceso de trabajar con datos estructurados en aplicaciones TypeScript, especialmente cuando se trata de APIs o manipulación de datos externos.
+TypeBox es una biblioteca para JavaScript/TypeScript que actúa como un constructor de esquemas JSON con una característica especial: los esquemas creados pueden ser inferidos a tipos de TypeScript. En esencia, TypeBox es una herramienta que te permite definir una estructura de datos una sola vez, y usar esa definición tanto para la verificación de tipos de TypeScript como para la validación de datos en tiempo de ejecución. Esto simplifica el proceso de trabajar con datos estructurados en aplicaciones TypeScript, especialmente cuando se trata de APIs o manipulación de datos externos.
 
-###  ¿Para qué sirve TypeBox?
+### ¿Para qué sirve TypeBox?
 
 - Crear esquemas JSON robustos y tipados.
 - Mantener la consistencia entre los tipos de TypeScript y la estructura de datos real.
-- Validar la integridad de los datos en runtime
-
+- Validar la integridad de los datos en runtime.
 
 ### ¿Por qué usar TypeBox?
 
-- Inferencia de types
+- Inferencia de tipos
   - Genera automáticamente tipos TypeScript precisos a partir de esquemas JSON.
   - Reduce la duplicación de código y minimiza errores al unificar la definición de esquemas y tipos.
 
 - Interoperabilidad Universal 
-  - Una de las características más poderosas de TypeBox es su completa compatibilidad con JSON Schema (Draft 7), Esto signifca que los esquemas generados por TypeBox pueden exportarse fácilmente como JSON puro. Una vez exportados, estos esquemas son independientes de TypeBox y pueden utilizarse en cualquier contexto que soporte JSON Schema (Draft 7).
+  - Una de las características más poderosas de TypeBox es su completa compatibilidad con JSON Schema (Draft 7). Esto significa que los esquemas generados por TypeBox pueden exportarse fácilmente como JSON puro. Una vez exportados, estos esquemas son independientes de TypeBox y pueden utilizarse en cualquier contexto que soporte JSON Schema (Draft 7).
     
 - Rendimiento
   - Compilación ultrarrápida de esquemas, superando significativamente a otras soluciones del mercado.
   - Validación de datos altamente eficiente, comparable o superior a las alternativas más rápidas disponibles.
-  - Su compilador JIT (Just-In-Time) genera código de validación optimizado, ideal para aplicaciones que manejan
-    grandes volúmenes de datos o requieren validaciones frecuentes.
-    
+  - Su compilador JIT (Just-In-Time) genera código de validación optimizado, ideal para aplicaciones que manejan grandes volúmenes de datos o requieren validaciones frecuentes.
+
+### Ejemplos
+
+- Ejemplo 1 - Primitivos: Validación de tipos primitivos
+- Ejemplo 2 - Arreglos y Objetos: Validación de tipos de arreglos, objetos y compuestos
+- Ejemplo 3 - Regex: Validación personalizada con expresiones regulares
+- Ejemplo 4 - Compilación: Compilación de esquemas para un mayor rendimiento
+- Ejemplo 5 - Wrapper: Clase Wrapper con diferentes utilidades
+
 ```typescript
 ┌────────────────────────────┬────────────┬──────────────┬──────────────┬──────────────┬──────────────┐
 │ (index)                    │ Iterations │ ValueCheck   │ Ajv          │ TypeCompiler │ Performance  │
@@ -63,17 +69,3 @@ TypeBox es una biblioteca para JavasScript/TypeScript que actúa como un constru
 │ Array_Math_Matrix4         │ 1000000    │ '   2382 ms' │ '    111 ms' │ '     83 ms' │ '    1.34 x' │
 └────────────────────────────┴────────────┴──────────────┴──────────────┴──────────────┴──────────────┘
 ```
-
-
-
-#  BORRADOR
- - explicar que es typebox y para que sirve
- - por que usar typebox
- - ejemplos 
-   - ejemplo 1 primitivos
-   - ejemplo 2 javascript data structures (array y objetos)
-   - ejemplo 3 regex
-   - ejemplo 4 compile schemas
-   - ejemplo 5 wrapper
-
-
